@@ -1,0 +1,24 @@
+<!-- Form should have following types of fields: 
+Text field
+Checkbox
+Radio buttons (set of 2 buttons)
+A submit button -->
+
+<div>
+    <form [formGroup]="saveForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+            <input matInput name="name" placeholder="Name">
+        </mat-form-field>
+        <section>
+            <mat-checkbox name="human">Are you human?</mat-checkbox>
+        </section>
+        <mat-radio-group name="sex">
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+        </mat-radio-group>
+        <section>
+            <button mat-raised-button type="submit" color="primary">Submit</button>
+        </section>
+    </form>
+</div>
+
