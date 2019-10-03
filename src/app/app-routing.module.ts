@@ -4,7 +4,8 @@ import { TestingFormComponent } from './testing-form/testing-form.component';
 
 
 const routes: Routes = [
-  {path: 'testing-form', component: TestingFormComponent }
+  {path: 'testing-form', component: TestingFormComponent },
+  {path: '**', redirectTo:'/'}
 ];
 
 @NgModule({

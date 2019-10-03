@@ -13,11 +13,12 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
 //form validation
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestingFormComponent
+    TestingFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +29,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatRadioModule,
     MatButtonModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

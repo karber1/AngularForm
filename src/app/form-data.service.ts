@@ -4,6 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class FormDataService {
-  data; 
+  
+  users;
+  
+  saveUser(data) {
+    this.users = JSON.parse(JSON.stringify(data));
+    return this.users;
+  }
+
+  getUser() {
+    console.log(this.users);
+  }
+
   constructor() { }
 }
